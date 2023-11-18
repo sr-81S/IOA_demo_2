@@ -5,24 +5,29 @@ import ioaImage from "../../assets/ioa1.jpeg"
 const NavBar = () => {
   
   return (
-    <div className="h-20 bg-slate-300 px-20 flex items-center justify-between  " >
+    <div  >
+        <div className="h-10 px-20 flex items-center justify-between" >
+        <div className="justify-between flex gap-5 text-xl text-black">
+            <div><i className="fa fa-facebook-official"></i></div>
+           <div><i className="fa fa-twitter-square"></i></div>
+           <div><i className="fa fa-whatsapp"></i></div>
+           <div><i className="fa fa-envelope"></i></div>
+            </div> 
         <div>
-        <img className="h-15 w-20" src={ioaImage} alt="" srcset="" />
+          <span> <Link>Sign In</Link> / <Link>Sign UP</Link> </span>
+        </div>
+        </div>
+        
+        <div className="h-20 bg-slate-300 px-20 flex items-center justify-between  " >
+        <div>
+        <img className="h-15 w-20" src={ioaImage} alt=""  />
         </div>
 
         
         <nav  >
-            {/* <ul className="flex items-center gap-10" >
-                <li><Link className="font-medium text-base" to='/' >Home</Link></li>
-                <li><Link className="font-medium text-base" to='/about' >About</Link></li>
-                <li><Link className="font-medium text-base" to='/gallery' >Gallery</Link></li>
-                <li><Link className="font-medium text-base" to='/contact' >Contact</Link></li>
-                <li><Link className="font-medium text-base" to='/Odias' >Odias</Link></li>
-                
-                
-            </ul> */}
+           
 
-           <ul class="flex items-center gap-10">
+           <ul className="flex items-center gap-10">
             <li><Link className="font-medium text-base" to='/'>Home</Link></li>
             <li><Link className="font-medium text-base" to='/about'>About</Link></li>
             <li><Link className="font-medium text-base" to='/gallery'>Gallery</Link></li>
@@ -30,11 +35,11 @@ const NavBar = () => {
             <li><Link className="font-medium text-base" to='/contact'>Contact</Link></li>
             <li><Link className="font-medium text-base" to='/ireland'>Ireland</Link></li>
             <li><Link className="font-medium text-base" to='/epatrika'>E-patrika</Link></li>
-            <li class="flex relative group">
+            <li className="flex relative group">
             <li><Link className="font-medium text-base mr-1" to='/odias'>Odias</Link></li>    
              
              
-              <ul class="absolute bg-white text-center w-[8rem] top-6 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg z-5">
+              <ul className="absolute bg-white text-center w-[8rem] top-6 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg z-5">
                 
                 <li><Link className="text-sm px-8 py-1 hover:bg-blue-400 leading-8" to='/culture'>Culture</Link></li>
                 <li><Link className="text-sm px-9 py-1 hover:bg-blue-400 leading-8" to='/festival'>Festival</Link></li>
@@ -51,15 +56,19 @@ const NavBar = () => {
             </li>
           </ul>
         </nav>
-        <div className="justify-between flex gap-5 text-xl text-black">
-            <div><i class="fa fa-facebook-official"></i></div>
-           <div><i class="fa fa-twitter-square"></i></div>
-           <div><i class="fa fa-whatsapp"></i></div>
-           <div><i class="fa fa-envelope"></i></div>
-            </div> 
-        <div><button className="p-3 bg-cyan-700 rounded-lg">sign in/sign up</button></div>
+        </div>
+
     </div>
   )
 }
 
 export default NavBar
+
+
+{/* <div className="justify-between flex gap-5 text-xl text-black">
+            <div><i className="fa fa-facebook-official"></i></div>
+           <div><i className="fa fa-twitter-square"></i></div>
+           <div><i className="fa fa-whatsapp"></i></div>
+           <div><i className="fa fa-envelope"></i></div>
+            </div> 
+        <div><button className="p-3 bg-cyan-700 rounded-lg">sign in/sign up</button></div> */}
