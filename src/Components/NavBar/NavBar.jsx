@@ -8,10 +8,10 @@ const NavBar = () => {
     <div  >
         <div className="h-10 px-20 flex items-center justify-between" >
         <div className="justify-between flex gap-5 text-xl text-black">
-            <div><i className="fa fa-facebook-official"></i></div>
-           <div><i className="fa fa-twitter-square"></i></div>
-           <div><i className="fa fa-whatsapp"></i></div>
-           <div><i className="fa fa-envelope"></i></div>
+            <div className="text-cyan-700" ><i className="fa fa-facebook-official"></i></div>
+           <div className="text-cyan-700" ><i className="fa fa-twitter-square"></i></div>
+           <div className="text-cyan-700" ><i className="fa fa-whatsapp"></i></div>
+           <div className="text-cyan-700" ><i className="fa fa-envelope"></i></div>
             </div> 
         <div className="flex gap-6 justify-center items-center" >
           <span> <Link className="text-cyan-700 font-medium" >Become a Member</Link></span>
